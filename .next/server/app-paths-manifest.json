@@ -1,0 +1,7 @@
+{
+  "/workouts/push/page": "app/workouts/push/page.js",
+  "/workouts/cardio/page": "app/workouts/cardio/page.js",
+  "/workouts/gym-cardio/page": "app/workouts/gym-cardio/page.js",
+  "/workouts/gym-push/page": "app/workouts/gym-push/page.js",
+  "/page": "app/page.js"
+}

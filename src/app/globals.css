@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-20px) translateX(10px); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(20px) translateX(-10px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-15px) translateX(-15px); }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 12s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 15s ease-in-out infinite;
+}
+
+/* Glass effect utilities */
+.glass-effect {
+  @apply backdrop-blur-lg bg-opacity-20 border border-opacity-20 shadow-lg;
+}
+
+.glass-effect-light {
+  @apply backdrop-blur-md bg-opacity-10 border border-opacity-10 shadow-md;
+}
+
+/* Theme transitions */
+.theme-transition {
+  @apply transition-all duration-300 ease-out;
+}
+
+/* Typography */
+body {
+  @apply antialiased;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #f3f4f6;
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow;
+  }
+  
+  .section-title {
+    @apply text-2xl font-bold text-gray-800 mb-4;
+  }
+  
+  .text-content {
+    @apply text-gray-600;
+  }
+} 
