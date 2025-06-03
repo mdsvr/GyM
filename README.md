@@ -1,81 +1,69 @@
-# GyM - Fitness Workout Application 🏋️‍♂️
+# Fitness Workout App
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-38B2AC)
-![License](https://img.shields.io/badge/License-MIT-green)
+A modern web application for fitness enthusiasts built with Next.js and TypeScript. The app provides various workout routines for different environments and equipment levels.
 
-A comprehensive fitness application built with Next.js that provides both resistance band and gym equipment workout routines. Perfect for users who want flexibility in their workout options, whether at home or in the gym.
+## Features
 
-## 🌟 Features
+- 🏋️‍♂️ Multiple workout categories:
+  - Gym Equipment Workouts
+  - Resistance Band Workouts
+  - Calisthenics Workouts
+  - Home Calisthenics (No Equipment)
+- 🎨 Theme support (Default and Testosterone themes)
+- 📱 Responsive design
+- 💪 Detailed exercise descriptions
+- 🔄 Progressive variations for each exercise
+- 📝 Form tips and safety guidelines
 
-- **Dual Workout Options**:
-  - 🏋️ Gym Equipment Workouts
-  - 💪 Resistance Band Workouts
+## Tech Stack
 
-- **Complete Workout Routines**:
-  - Push exercises (chest, shoulders, triceps)
-  - Pull exercises (back, biceps)
-  - Legs workouts (quads, hamstrings, calves)
-  - Cardio sessions
+- Next.js 13+ (App Router)
+- TypeScript
+- Tailwind CSS
+- React Context for theming
 
-- **Rich Exercise Content**:
-  - Detailed exercise instructions
-  - Video demonstrations via YouTube
-  - Equipment requirements lists
-  - Set/rep recommendations
-  - Progress tracking
-
-- **User Experience**:
-  - Theme system with testosterone and estrogen modes
-  - Responsive design with glassmorphism effects
-  - Interactive exercise cards
-  - Progress indicators
-  - Easy navigation between workouts
-
-## 🚀 Tech Stack
-
-- **Frontend**: Next.js 14
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **State Management**: React Context
-- **Animations**: CSS Transitions
-
-## 🛠️ Installation
+## Getting Started
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/mdsvr/GyM.git
-   cd GyM
-   ```
+```bash
+git clone [your-repo-url]
+cd gym
+```
 
 2. Install dependencies:
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 3. Run the development server:
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-/src
-  /app
-    /components        # Reusable React components
-      ThemeSwitcher.tsx
-      WorkoutTimer.tsx
-    /context          # React Context providers
-      ThemeContext.tsx
-    /styles           # Theme and global styles
-    /workouts         # Workout routine pages
-      /gym-*          # Gym equipment workouts
-      /*              # Resistance band workouts
+src/
+├── app/                    # Next.js app directory
+│   ├── context/           # React Context providers
+│   ├── components/        # Reusable components
+│   └── workouts/         # Workout pages
+│       ├── calisthenics/  # Calisthenics workouts
+│       ├── gym/           # Gym workouts
+│       └── ...
+├── styles/                # Global styles
+└── types/                 # TypeScript type definitions
 ```
+
+## Contributing
+
+Feel free to open issues and pull requests for any improvements you'd like to add.
+
+## License
+
+MIT License - feel free to use this project for your own learning and development.
 
 ## 🎯 Usage
 

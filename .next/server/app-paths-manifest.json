@@ -1,4 +1,4 @@
 {
   "/page": "app/page.js",
-  "/workouts/gym-push/page": "app/workouts/gym-push/page.js"
+  "/workouts/calisthenics/no-equipment/page": "app/workouts/calisthenics/no-equipment/page.js"
 }

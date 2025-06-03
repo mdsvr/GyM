@@ -11,10 +11,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/workouts/gym-push/page": [
+    "/workouts/calisthenics/no-equipment/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/workouts/gym-push/page.js"
+      "static/chunks/app/workouts/calisthenics/no-equipment/page.js"
     ]
   }
 }
